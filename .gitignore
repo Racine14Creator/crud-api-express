@@ -1,0 +1,16 @@
+/node_modules
+./node_modules
+/.env
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+/.next
+/.next/cache
+/.next/static
+/.next/server
+
+/.next/BUILD_ID
+/.next/BUILD_ID.map
+/.next/BUILD_ID.map.json
+/.next/BUILD_ID.map.json.map
