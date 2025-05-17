@@ -12,6 +12,11 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
+app.use("/api/v1/users", (req, res) => {
+    res.send("User route")
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 })
