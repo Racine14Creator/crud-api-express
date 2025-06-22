@@ -2,6 +2,7 @@ import cors from "cors";
 import express from "express";
 import * as dotenv from "dotenv";
 import userRoute from "./routers/user.route.js";
+import connectDB from "./config/db.js";
 
 dotenv.config({path: "./.env"});
 
@@ -19,5 +20,6 @@ app.use("/api/v1/users", userRoute);
 
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`)
-})
+    console.log(`Server is running on port ${PORT}`);
+    connectDB();
+});
